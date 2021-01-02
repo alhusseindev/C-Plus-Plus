@@ -1,0 +1,21 @@
+# see https://github.com/Lnk2past/contest
+executable: main.exe
+test-cases:
+    - name: mass-1.0
+      stdin: |
+          1
+      stdout: |
+          What is your mass?
+          9e+16
+    - name: mass-10.0
+      stdin: |
+          10
+      stdout: |
+          What is your mass?
+          9e+17
+    - name: mass-50.0
+      stdin: |
+          50
+      stdout: |
+          What is your mass?
+          4.5e+18

@@ -1,0 +1,35 @@
+# see https://github.com/Lnk2past/contest
+executable: main.exe
+test-cases:
+    - name: test-01
+      stdin: |
+        10
+        10
+        10
+      stdout: |
+        What is your velocity, acceleration, and time elapsed?
+        600
+    - name: test-02
+      stdin: |
+        10
+        10
+        0
+      stdout: |
+        What is your velocity, acceleration, and time elapsed?
+        0
+    - name: test-03
+      stdin: |
+        10
+        0
+        10
+      stdout: |
+        What is your velocity, acceleration, and time elapsed?
+        100
+    - name: test-04
+      stdin: |
+        0
+        10
+        10
+      stdout: |
+        What is your velocity, acceleration, and time elapsed?
+        500

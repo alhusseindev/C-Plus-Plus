@@ -1,0 +1,30 @@
+# see https://github.com/Lnk2past/contest
+executable: main.exe
+test-cases:
+    - name: test-01
+      env:
+        DISABLE_MALEN: ""
+      argv: ['100']
+      returncode: 0
+      stdout: |
+        pi ~ 2.8000000000
+    - name: test-02
+      env:
+        DISABLE_MALEN: ""
+      argv: ['1500']
+      returncode: 0
+      stdout: |
+        pi ~ 3.1226666667
+    - name: test-03
+      env:
+        DISABLE_MALEN: ""
+      returncode: 1
+      stderr: |
+        Invalid number of arguments - you must specify how many random points to generate!
+    - name: test-04
+      env:
+        DISABLE_MALEN: ""
+      argv: ['-1']
+      returncode: 2
+      stderr: |
+        Invalid number of points specified - you must provide a positive integer!

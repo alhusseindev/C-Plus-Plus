@@ -1,0 +1,35 @@
+# see https://github.com/Lnk2past/contest
+executable: main.exe
+test-cases:
+    - name: test-01
+      stdin: |
+        1
+        45
+      stdout: |
+        What is your hypotenuse length and angle?
+        0.707107
+        0.707107
+    - name: test-02
+      stdin: |
+        2
+        45
+      stdout: |
+        What is your hypotenuse length and angle?
+        1.41421
+        1.41421
+    - name: test-03
+      stdin: |
+        1
+        30
+      stdout: |
+        What is your hypotenuse length and angle?
+        0.866025
+        0.5
+    - name: test-04
+      stdin: |
+        1
+        60
+      stdout: |
+        What is your hypotenuse length and angle?
+        0.5
+        0.866025

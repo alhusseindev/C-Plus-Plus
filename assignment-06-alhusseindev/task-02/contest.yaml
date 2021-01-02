@@ -1,0 +1,15 @@
+# see https://github.com/Lnk2past/contest
+executable: main.exe
+test-cases:
+
+    - name: test-02
+      env:
+        DISABLE_MALEN: ""
+      returncode: 0
+      argv: ["1337"]
+      stdout: |
+        Frame data saved: animation_90_10_1337.bin
+      ofstreams:
+        - file: test_files/animation_90_10_1337.bin
+          test-file: animation_90_10_1337.bin
+          binary: True

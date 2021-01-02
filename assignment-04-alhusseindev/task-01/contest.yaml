@@ -1,0 +1,10 @@
+# see https://github.com/Lnk2past/contest
+executable: main.exe
+test-cases:
+    - name: test-01
+      stdout: |
+        It's dangerous to go alone! Take this.
+        22.0/7.0 = 3
+        22.0/7.0 = 3.143
+        22.0/7.0 = 3.1428571
+        3.14000,1.41400,9.81000

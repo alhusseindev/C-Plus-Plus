@@ -1,0 +1,27 @@
+# see https://github.com/Lnk2past/contest
+executable: main.exe
+test-cases:
+    - name: f-to-c-1
+      stdin: |
+          57.31f
+      stdout: |
+          What is your temperature?
+          14.0611c
+    - name: f-to-c-2
+      stdin: |
+          212.0f
+      stdout: |
+          What is your temperature?
+          100c
+    - name: c-to-f-1
+      stdin: |
+          72.64c
+      stdout: |
+          What is your temperature?
+          162.752f
+    - name: c-to-f-2
+      stdin: |
+          32.0c
+      stdout: |
+          What is your temperature?
+          89.6f

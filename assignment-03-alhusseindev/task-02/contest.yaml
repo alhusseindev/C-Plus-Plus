@@ -1,0 +1,33 @@
+# see https://github.com/Lnk2past/contest
+executable: main.exe
+test-cases:
+    - name: test-01
+      env:
+        DISABLE_MALEN: ""
+      stdin: |
+        5
+      stdout: |
+        Generate how many random numbers?
+        0.340629
+        0.0384946
+        0.675932
+    - name: test-02
+      env:
+        DISABLE_MALEN: ""
+      stdin: |
+        100
+      stdout: |
+        Generate how many random numbers?
+        0.530659
+        0.00275445
+        0.977195
+    - name: test-02
+      env:
+        DISABLE_MALEN: ""
+      stdin: |
+        1000
+      stdout: |
+        Generate how many random numbers?
+        0.494904
+        0.00075307
+        0.9997

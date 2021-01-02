@@ -1,0 +1,7 @@
+# see https://github.com/Lnk2past/contest
+executable: main.exe
+test-cases:
+    - name: standard
+      stdout: |
+        Hello World!
+        

@@ -1,0 +1,35 @@
+{
+    "environment": {
+        "air_density": 1.225
+    },
+    "radar": {
+        "position": [8000.0, 0.0],
+        "detection_range": 4000.0,
+        "gains": {
+            "alpha": 1.5,
+            "beta": 0.15,
+            "gamma": 0.1
+        }
+    },
+    "weapon": {
+        "position": [8000.0, 0.0],
+        "engage_range": 3000.0,
+        "exit_speed": 840.0,
+        "salvo_fuse": 3.5,
+        "blast_radius": 10.0,
+        "cooldown": 0.5,
+        "salvo": {
+            "mass": 50,
+            "radius": 0.1,
+            "drag_coefficient": 0.01
+        }
+    },
+    "projectiles": [
+        {
+            "mass": 50,
+            "radius": 0.2,
+            "drag_coefficient": 0.04,
+            "velocity": [242.5, 242.5]
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+# see https://github.com/Lnk2past/contest
+executable: main.exe
+test-cases:
+    - name: test-01
+      env:
+        DISABLE_MALEN: ""
+      argv: ['1']
+      returncode: 0
+      stdout: |
+        <70.00,57.00>
+    - name: test-02
+      env:
+        DISABLE_MALEN: ""
+      argv: ['10']
+      returncode: 0
+      stdout: |
+        <70.00,57.00>
+        <68.57,71.27>
+        <32.35,27.59>
+        <2.67,55.97>
+        <29.95,79.87>
+        <97.96,62.31>
+        <86.24,75.02>
+        <90.02,44.16>
+        <55.30,84.76>
+        <92.28,32.00>
+    - name: test-03
+      env:
+        DISABLE_MALEN: ""
+      returncode: 1
+      stderr: |
+        Invalid number of arguments - you must specify how many random points to generate!
+    - name: test-04
+      env:
+        DISABLE_MALEN: ""
+      argv: ['-1']
+      returncode: 2
+      stderr: |
+        Invalid number of points specified - you must provide a positive integer!
